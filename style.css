@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 100%;
+    font-family: "Unbounded", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden; 
+}
+
+
+/* HEADER  */
+
+
+
+.header{
+    
+    display: flex; 
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+    
+    
+}
+
+.header-wrapper:hover{
+    box-shadow: 10px 10px 15px 2px #0000002f;
+}
+
+.nav-item{
+    transition: all 0.5s ease;
+}
+
+.nav-item:hover{
+    padding: 10px 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(1px) ;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    
+    
+}
+
+.header-wrapper{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 1s ease;
+    height: 70px;
+    line-height: 1.2;
+    padding: 0 40px;
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+    background: rgba(230, 230, 230, 0.233);
+    border-radius: 50px;
+    backdrop-filter: blur(3px) brightness(1);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.025);
+    
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 100px;
+    font-weight: 800;
+}
+
+.nav-list{
+    
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+
+
+
+.nav__item--mobile{
+    display: none;
+}
+
+
+/* SECTION HEADER */
+
+.section-header{
+    display: flex;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/background.jpg'); /* шлях до вашої картинки */
+    backdrop-filter: brightness(0.3);
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: scroll; 
+    
+    
+}
+
+.section-header__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 10px;
+    
+}
+
+.section-header__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.section-header__title{
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    color: #fff;
+   
+}
+
+.start-btn{
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(2px);
+    transition: all 1s ease;
+    box-shadow: 10px 10px 15px 2px #0000002f;
+}
+
+.btn{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    font-family: "Unbounded", sans-serif;
+}
+
+.aboutme-btn{
+    box-shadow: 10px 10px 15px 2px #0000002f;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(2px);
+    transition: all 1s ease;
+    
+}
+
+.aboutme-btn:hover, .start-btn:hover{
+    background: rgba(255, 255, 255, 0.075);
+    color: rgba(255, 255, 255, 0.726);
+    
+    
+}
+
+/*        BOUTME           */
+
+.section-myprojects{
+    display: flex;
+    background: #fff;
+    background-image:
+        linear-gradient(0deg, rgba(218, 218, 218, 0.541) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(218, 218, 218, 0.541) 1px, transparent 1px);
+    background-size: 25px 25px;
+    color: #000000;
+    
+    justify-content: center;
+}
+
+.section-myprojects__content{
+    
+    padding: 5rem 30px;
+}
+
+.section-myprojects__title{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+
+
+}
+
+.section-myprojects__btn{
+    display: flex;
+    color: #000;
+    font-size: 20px;
+    gap: 10px;
+    justify-content: left;
+    margin-top: 20px;
+    
+}
+
+.github-btn, .linkedin-btn{
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+}
+
+.telegram-btn{
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+
+}
+.github-btn:hover{
+    color: #ffffff;
+    background-color: #a606b4;
+    
+}
+
+.linkedin-btn:hover{
+    color: #ffffff;
+    background-color: #1779b3;
+    
+}
+
+.telegram-btn:hover{
+    background-color: 	#24A1DE;
+}
+
+.section-myprojects__text{
+    margin-top: 40px;
+    display: flex;
+    max-width: 600px;
+    border: 1px solid #000;
+    padding: 20px 30px;
+    border-radius: 15px;
+    
+}
+
+.myprojects-text{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/*ABOUTME*/
+
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(0, 0, 0);
+   
+}
+
+.footer-text{
+    padding: 5rem 50px;
+    
+}
+
+
+@media screen and (max-width: 750px) {
+    .section-header__content{
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+
+
+    .section-header__title{
+        font-size: 40px;
+    }
+
+    .logo{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn-mobile{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 475px) {
+    .logo{
+        margin-right: 10px;
+    }
+
+    .nav-list{
+        gap: 10px;
+    }
+    
+    .section-header__title{
+        font-size: 35px;
+    }
+
+    .btn{
+        gap: 5px;
+        margin-top: 20px;
+
+        
+    }
+
+    .start-btn{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .aboutme-btn{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .section-header__title{
+        font-size: 28px;
+    }
+
+    .start-btn{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .aboutme-btn{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .btn-mobile__contact{
+        display: none;
+    }
+
+    .nav__item--mobile{
+        display: flex;
+    }
+
+    .header{font-size: 12px;}
+    .header-wrapper{padding: 0 20px;}
+}
+
+@media screen and (max-width: 360px) {
+    .section-header__title{
+        font-size: 26px;
+    }
+
+    .start-btn{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .aboutme-btn{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .section-myprojects__content{
+        padding: 5rem 10px;
+    }
+    .section-myprojects__text{
+        padding: 15px;
+    }
+    
+    .section-myprojects__btn{
+        flex-direction: column;
+    }
+}
